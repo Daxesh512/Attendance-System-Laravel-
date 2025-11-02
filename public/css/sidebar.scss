@@ -1,0 +1,88 @@
+#sidebar{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00204a;
+    color: white;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: translateX(-250px);
+    transition: transform 0.3s ease-in-out;
+    &.active{
+        transform: translateX(0);
+    }
+
+    .sidebar-header{
+        padding: 30px 0;
+        background-color: #00204a;
+        color: white;
+        text-align: center;
+    }
+
+    .sidebar-content{
+        .group{
+            .sidebar-content-header{
+                padding: 0 25px;
+                margin: 10px 0;
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: rgba(#ffffff, 0.5);
+            }
+
+            ul{
+                list-style:none;
+                li{
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 25px;
+                    margin: 2px 10px;
+                    border-radius: 5px;
+                    &:hover{
+                        background-color: #001a3d;
+                    }
+                    a{
+                        display: block;
+                        font-size: 14px;
+                        padding: 10px 0;
+                        color: white;
+                        text-decoration: none;
+                        width: 100%;
+                        i{
+                            margin-right: 15px;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom{
+        border-top: #ffffff 1px solid;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 12px;
+        color: rgba(#ffffff, 0.7);
+        .name{
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 10px
+        }
+        a{
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,89 @@
+.class-card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr) );
+    gap: 15px;
+    padding: 0 30px;
+
+    &.pro{
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.class-card{
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 7px;
+    outline: none;
+    .subject{
+        &.name{
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #00204a;
+        }
+        &.room{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+        &.section{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+        &.prof{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+        &.sy{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+        &.days{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+        &.time{
+            font-size: 1rem;
+            font-weight: 400;
+            color: #00204a;
+        }
+    }
+
+    &:hover{
+        transform: scale(1.03);
+        background-color: rgba(#00bbf0, 0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    }
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(#00204a, 0.5);
+    img{
+        width: 300px;
+        height: 300px;
+        opacity: .6;
+    }
+}
+
+//media query 500px
+@media screen and (max-width: 500px){
+    .class-card-container{
+        grid-template-columns: repeat(1, 1fr );
+    }
+}
