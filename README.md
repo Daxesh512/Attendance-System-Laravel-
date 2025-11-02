@@ -1,4 +1,4 @@
-# Attendance System Monitoring for Our Lady of Lourdes College
+# Attendance System Monitoring 
 
 ## Description
 
